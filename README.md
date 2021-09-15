@@ -3,7 +3,7 @@ Conversational Question Answering (CoQA) Challenge is a challenge aimed at evalu
 The project focuses on reading comprehension question answering which aims to better understand a passage and answer a set of interconnected questions that follow.
 We adopted a bidirectional transformer model for our project. Our BERT-based Implementation achieved an F1 score of 74.6 on the development dataset.
 
-
+This Model Provided a F1 score of 74.6 which is comparable to many state-of-the-art NLP models for this domain.
 Steps to reproduce the results: 
 
 1) python BERT_Model.py
