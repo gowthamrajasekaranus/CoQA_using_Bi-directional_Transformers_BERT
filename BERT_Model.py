@@ -21,8 +21,6 @@ epochs = 1.0
 evaluation_batch_size=16
 train_batch_size=2
  
-#   our model is adapted from the baseline model of https://arxiv.org/pdf/1909.10772.pdf
-
 class BertBaseUncasedModel(BertPreTrainedModel):
 
     #   Initialize Layers for our model
@@ -32,7 +30,7 @@ class BertBaseUncasedModel(BertPreTrainedModel):
         hidden_size = config.hidden_size
         self.fc=nn.Linear(hidden_size,hidden_size)
         self.linear1 =nn.Linear(hidden_size,1)
-        self.linear2= nn.Linear(hidden_size,2)
+        self.linear2= nn.Linear(hidden_size,1)
         self.activation = getattr(F, activation)
         self.init_weights()
 
